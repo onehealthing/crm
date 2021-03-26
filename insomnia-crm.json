@@ -1,0 +1,628 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2021-02-17T17:19:51.092Z",
+    "__export_source": "insomnia.desktop.app:v2020.5.2",
+    "resources": [
+        {
+            "_id": "req_9980ff8755d54fff8969bf60731acee9",
+            "parentId": "fld_43518916fc9e4b95b09a0b223f34cdc5",
+            "modified": 1613504316709,
+            "created": 1613419138545,
+            "url": "{{ _.base_url }}/companies/23/clients",
+            "name": "Clients",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.access_token }}"
+            },
+            "metaSortKey": -1613419138545,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_43518916fc9e4b95b09a0b223f34cdc5",
+            "parentId": "fld_b7e81bdb2697416fb3c26df67da5a799",
+            "modified": 1613411272962,
+            "created": 1613411272962,
+            "name": "Companies",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1613411272962,
+            "_type": "request_group"
+        },
+        {
+            "_id": "fld_b7e81bdb2697416fb3c26df67da5a799",
+            "parentId": "wrk_56e5075b2ec34fe3b5a764f7d6ab9244",
+            "modified": 1613560316156,
+            "created": 1613407939931,
+            "name": "CRM",
+            "description": "",
+            "environment": {
+                "base_url": "http://localhost/api/v1",
+                "access_token": ""
+            },
+            "environmentPropertyOrder": {
+                "&": [
+                    "base_url",
+                    "access_token"
+                ]
+            },
+            "metaSortKey": -1613407939931,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_56e5075b2ec34fe3b5a764f7d6ab9244",
+            "parentId": null,
+            "modified": 1595004699324,
+            "created": 1595004699324,
+            "name": "Insomnia",
+            "description": "",
+            "scope": null,
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_76eba1be1805407d9d38b7e7aaa83561",
+            "parentId": "fld_43518916fc9e4b95b09a0b223f34cdc5",
+            "modified": 1613504152092,
+            "created": 1613416400071,
+            "url": "{{ _.base_url }}/companies/3",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.access_token }}"
+            },
+            "metaSortKey": -1613416400071,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_2a6b86d419234ccc858408d6691bf4aa",
+            "parentId": "fld_43518916fc9e4b95b09a0b223f34cdc5",
+            "modified": 1613501087017,
+            "created": 1613415741991,
+            "url": "{{ _.base_url }}/companies",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"title\": \"Alten33w22essrth 333\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_5cb5ad17d3b14435b782818334d3e96c"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.access_token }}"
+            },
+            "metaSortKey": -1613415741991,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_6ccbd4bfd88145c6a908c2c71f254f7b",
+            "parentId": "fld_43518916fc9e4b95b09a0b223f34cdc5",
+            "modified": 1613504130768,
+            "created": 1613415914749,
+            "url": "{{ _.base_url }}/companies/3",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"title\": \"222\",\n\t\"clients\": [3, 4]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_5cb5ad17d3b14435b782818334d3e96c"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.access_token }}"
+            },
+            "metaSortKey": -1613413509826,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f41f4b92dfb647958711ca82c8615edc",
+            "parentId": "fld_43518916fc9e4b95b09a0b223f34cdc5",
+            "modified": 1613415747221,
+            "created": 1613411277601,
+            "url": "{{ _.base_url }}/companies",
+            "name": "List",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.access_token }}"
+            },
+            "metaSortKey": -1613411277661,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_28f81160339b47c9807c03184d6de903",
+            "parentId": "fld_68fb5aeb4b3240fc852589907a6caab7",
+            "modified": 1613504328423,
+            "created": 1613420879669,
+            "url": "{{ _.base_url }}/clients/4/companies",
+            "name": "Companies",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.access_token }}"
+            },
+            "metaSortKey": -1613420879669,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_68fb5aeb4b3240fc852589907a6caab7",
+            "parentId": "fld_b7e81bdb2697416fb3c26df67da5a799",
+            "modified": 1613418714998,
+            "created": 1613418714998,
+            "name": "Clients",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1613410503454,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_7d723b7d6b89477ba52eaaac905c38d5",
+            "parentId": "fld_68fb5aeb4b3240fc852589907a6caab7",
+            "modified": 1613503754758,
+            "created": 1613418715011,
+            "url": "{{ _.base_url }}/clients/2",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.access_token }}"
+            },
+            "metaSortKey": -1613416400071,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_8513226e232c41dc9ca0b91258bf025c",
+            "parentId": "fld_68fb5aeb4b3240fc852589907a6caab7",
+            "modified": 1613559801781,
+            "created": 1613418715006,
+            "url": "{{ _.base_url }}/clients",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Aloha\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_5cb5ad17d3b14435b782818334d3e96c"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.access_token }}"
+            },
+            "metaSortKey": -1613415741991,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_2ed51d541cb34b56904d1f5a98ccc39c",
+            "parentId": "fld_68fb5aeb4b3240fc852589907a6caab7",
+            "modified": 1613502704760,
+            "created": 1613418715008,
+            "url": "{{ _.base_url }}/clients/1",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"123\",\n\t\"companies\": [1]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_5cb5ad17d3b14435b782818334d3e96c"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.access_token }}"
+            },
+            "metaSortKey": -1613413509826,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_1b9f9beb06fc4a5a8aad4159ec75d434",
+            "parentId": "fld_68fb5aeb4b3240fc852589907a6caab7",
+            "modified": 1613418922678,
+            "created": 1613418715003,
+            "url": "{{ _.base_url }}/clients",
+            "name": "List",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.access_token }}"
+            },
+            "metaSortKey": -1613411277661,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_6fbdd72af9754de29d08e90add15be4f",
+            "parentId": "fld_7a7a711953d045258cad7946e14fe88c",
+            "modified": 1613409959978,
+            "created": 1613409885226,
+            "url": "{{ _.base_url }}/auth/logout",
+            "name": "User",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.access_token }}"
+            },
+            "metaSortKey": -1613409885226,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_7a7a711953d045258cad7946e14fe88c",
+            "parentId": "fld_b7e81bdb2697416fb3c26df67da5a799",
+            "modified": 1613408644929,
+            "created": 1613408644929,
+            "name": "Auth",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1613408644929,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_f50aab1bdb57434fae284f15a75c76ce",
+            "parentId": "fld_7a7a711953d045258cad7946e14fe88c",
+            "modified": 1613486275699,
+            "created": 1613408651347,
+            "url": "{{ _.base_url }}/auth/login",
+            "name": "Login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"login\": \"lauren42@example.org\",\n\t\"password\": \"password\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_0f5f88ec069942fa8b9e4186c62d0267"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1613408651347,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_2595ab4034bac7f991f7b7573d22ee2b004a4b4e",
+            "parentId": "wrk_56e5075b2ec34fe3b5a764f7d6ab9244",
+            "modified": 1595603031398,
+            "created": 1595004699379,
+            "name": "Base Environment",
+            "data": {
+                "baseUrl": "localhost:3000"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "baseUrl"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1595004699379,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_2595ab4034bac7f991f7b7573d22ee2b004a4b4e",
+            "parentId": "wrk_56e5075b2ec34fe3b5a764f7d6ab9244",
+            "modified": 1611155588978,
+            "created": 1595004699382,
+            "name": "Default Jar",
+            "cookies": [
+                {
+                    "key": "__cfduid",
+                    "value": "d900f82921367246a4a008119dc6832501595008095",
+                    "expires": "2020-08-16T17:48:15.000Z",
+                    "domain": "onesignal.com",
+                    "path": "/",
+                    "httpOnly": true,
+                    "extensions": [
+                        "SameSite=Lax"
+                    ],
+                    "hostOnly": false,
+                    "creation": "2020-07-17T17:48:15.556Z",
+                    "lastAccessed": "2020-07-17T17:48:15.556Z",
+                    "id": "5343687430196229"
+                },
+                {
+                    "key": "__cfduid",
+                    "value": "d8f0349bee1dbe276065530e2ce89457d1600957286",
+                    "expires": "2020-10-24T14:21:26.000Z",
+                    "domain": "exchangeratesapi.io",
+                    "path": "/",
+                    "httpOnly": true,
+                    "extensions": [
+                        "SameSite=Lax"
+                    ],
+                    "hostOnly": false,
+                    "creation": "2020-09-24T14:21:25.091Z",
+                    "lastAccessed": "2020-09-24T14:21:25.091Z",
+                    "id": "6286478885616922"
+                },
+                {
+                    "key": "__cfduid",
+                    "value": "d5802c2128659bb2009a851229e930cf11600957635",
+                    "expires": "2020-10-24T14:27:15.000Z",
+                    "domain": "currencylayer.com",
+                    "path": "/",
+                    "httpOnly": true,
+                    "extensions": [
+                        "SameSite=Lax"
+                    ],
+                    "hostOnly": false,
+                    "creation": "2020-09-24T14:27:15.212Z",
+                    "lastAccessed": "2020-09-24T14:27:15.212Z",
+                    "id": "5178165047781949"
+                },
+                {
+                    "key": "__cfduid",
+                    "value": "d74f748311d2a4f9987307ebc250bec891602914209",
+                    "expires": "2020-11-16T05:56:49.000Z",
+                    "domain": "cryptoapis.io",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "extensions": [
+                        "SameSite=Lax"
+                    ],
+                    "hostOnly": false,
+                    "creation": "2020-10-17T05:56:49.678Z",
+                    "lastAccessed": "2020-10-17T05:56:49.678Z",
+                    "id": "19358314104867724"
+                },
+                {
+                    "key": "XSRF-TOKEN",
+                    "value": "eyJpdiI6Ii95SDdLZXEweUN5THB1dXBjYWsvRlE9PSIsInZhbHVlIjoiTllCeGQ5Z2pZUFE3U3FUa3NaeDZvUlo4YzNZTCtEUjJraXBERVlBaHVXS3pNckFLSmJMYW1BZkJRdmswd1JLcEwvWThGMnF4R3J4MnRxSitaZEVCNWRmdDJ6TUxzL3JIcmpwczYzRG5ZQnFBZ1VOSVNvLzV4akZDUkpseFNBTUIiLCJtYWMiOiI5OWY5MWU5M2FkOGU5Y2RiYmQ4MmQ5OGIwNWM0ZmYxNGJmNTNlYWYxNmI0NmUxMjczYTcxMzg2Y2ZjM2QyMGNmIn0%3D",
+                    "expires": "2021-01-20T17:13:08.000Z",
+                    "maxAge": 7200,
+                    "domain": "localhost",
+                    "path": "/",
+                    "extensions": [
+                        "samesite=lax"
+                    ],
+                    "hostOnly": true,
+                    "creation": "2020-12-24T12:53:35.453Z",
+                    "lastAccessed": "2021-01-20T15:13:08.978Z",
+                    "id": "7912985680521061"
+                },
+                {
+                    "key": "finansi_session",
+                    "value": "eyJpdiI6ImFQb0YvdmkyNjU5cFZmaktvc2VNOUE9PSIsInZhbHVlIjoiRkVlWnF5RnZsU0VKWFZ4cmg4U0xwY2lZTzJhUVVtZkM5aUVzNFBvc0FVTlFiRkFRVVpLbXh1Nkdwd3R5ZU9xem5nMW9tNUF5czcxZFdiWWF0VzlWb3lseGtyL3hSc05rNzNNRjdMVG9FNENhekZlTTRMWWxSNnNIUUhEck1KWFgiLCJtYWMiOiJjMWI2NDU0YjMwY2JhMGQ1OTAxMzk1MDYzM2IzNzdkNzE2MWE1NDAwYjMyZTQ5ZGE1ZmQzOTBlZjU2YjIxZmY3In0%3D",
+                    "expires": "2021-01-20T17:13:08.000Z",
+                    "maxAge": 7200,
+                    "domain": "localhost",
+                    "path": "/",
+                    "httpOnly": true,
+                    "extensions": [
+                        "samesite=lax"
+                    ],
+                    "hostOnly": true,
+                    "creation": "2020-12-24T12:53:35.453Z",
+                    "lastAccessed": "2021-01-20T15:13:08.978Z",
+                    "id": "4166072093550517"
+                },
+                {
+                    "key": "XSRF-TOKEN",
+                    "value": "eyJpdiI6ImZvQzBoODdvN3NBd0ZPQnh1ZmpvK0E9PSIsInZhbHVlIjoiYmNMaWdYK3Z1TWFLdHNqZ2NZZ0x3QmhxUUFTNmI2bUxPLzRrYlRnTG5GaXVib3JNMno1NEdiMmEyOHFTSUNWTVJjRlJya2J6S2ZvdE8rQVN6Z3pGYnNleTRKVVlDNzFteStGMHpIMmdxVGt1TDZRMHd3c2FJTnJFMHA2RmVWQ3UiLCJtYWMiOiJlOWRkNzRkNTA5MTQ4Njc5ZTliMzUzZDQ3NTgxZjNjYTk4OTM4YzM1M2MxYTU2N2Q5MDA2OTRiMjBjNWRmNGFkIn0%3D",
+                    "expires": "2021-01-20T17:10:42.000Z",
+                    "maxAge": 7200,
+                    "domain": "lutsk.newveer.com",
+                    "path": "/",
+                    "extensions": [
+                        "samesite=lax"
+                    ],
+                    "hostOnly": true,
+                    "creation": "2021-01-20T15:10:13.635Z",
+                    "lastAccessed": "2021-01-20T15:10:42.597Z",
+                    "id": "1555908359020095"
+                },
+                {
+                    "key": "finansi_session",
+                    "value": "eyJpdiI6IkJxS3FFdjdQejJLanl5THJvL3hyU1E9PSIsInZhbHVlIjoicmNzTkMrYUpONndENmlzME9xYlRJSVh6dDJFeFJqeHYwV3U0d3ZWek80bTJKZ3drS01PUEttQzAxMWlabUU4R2d2NTlrS1d4RVpLK2tMREJzK0w0T0Njb1lBcm1rWUN4TGVrTlovaHpDS0Nha29QZitXVUFyQ25oTEVSQzFNY2QiLCJtYWMiOiIwNzYyZDUyYWFiZWQ4NTNjOWYwOTE4YjI2MTRlNTMxODRhMGU5NDE1OGM3NmYyNTFiMjBiMjI0OTA1NjA3NmM5In0%3D",
+                    "expires": "2021-01-20T17:10:42.000Z",
+                    "maxAge": 7200,
+                    "domain": "lutsk.newveer.com",
+                    "path": "/",
+                    "httpOnly": true,
+                    "extensions": [
+                        "samesite=lax"
+                    ],
+                    "hostOnly": true,
+                    "creation": "2021-01-20T15:10:13.636Z",
+                    "lastAccessed": "2021-01-20T15:10:42.597Z",
+                    "id": "08350531387751059"
+                }
+            ],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_3dfa1900da7a4e488e50cfdfc5a81772",
+            "parentId": "wrk_56e5075b2ec34fe3b5a764f7d6ab9244",
+            "modified": 1595004699326,
+            "created": 1595004699326,
+            "fileName": "Insomnia",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "env_659de0e19f704dedb864e27401268ca1",
+            "parentId": "env_2595ab4034bac7f991f7b7573d22ee2b004a4b4e",
+            "modified": 1608220036977,
+            "created": 1596089147610,
+            "name": "Local",
+            "data": {
+                "host": "http://like-cargo.herokuapp.com"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "host"
+                ]
+            },
+            "color": "#00c800",
+            "isPrivate": false,
+            "metaSortKey": 1596089147610,
+            "_type": "environment"
+        },
+        {
+            "_id": "env_31fa6c0c238a41e6a6c5060ad0484285",
+            "parentId": "env_2595ab4034bac7f991f7b7573d22ee2b004a4b4e",
+            "modified": 1608219081727,
+            "created": 1603123169220,
+            "name": "New Environment",
+            "data": {
+                "host": "http://like-cargo.herokuapp.com"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "host"
+                ]
+            },
+            "color": "#e42807",
+            "isPrivate": false,
+            "metaSortKey": 1603123169220,
+            "_type": "environment"
+        }
+    ]
+}

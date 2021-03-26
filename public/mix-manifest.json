@@ -1,0 +1,15 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/js/page-admin-view.js": "/js/js/page-admin-view.js",
+    "/js/js/page-admin-clients-view.js": "/js/js/page-admin-clients-view.js",
+    "/js/js/page-admin-clients-list.js": "/js/js/page-admin-clients-list.js",
+    "/js/js/page-admin-clients-create.js": "/js/js/page-admin-clients-create.js",
+    "/js/js/page-admin-clients-edit.js": "/js/js/page-admin-clients-edit.js",
+    "/js/js/page-admin-companies-view.js": "/js/js/page-admin-companies-view.js",
+    "/js/js/page-admin-companies-list.js": "/js/js/page-admin-companies-list.js",
+    "/js/js/page-admin-companies-create.js": "/js/js/page-admin-companies-create.js",
+    "/js/js/page-admin-companies-edit.js": "/js/js/page-admin-companies-edit.js",
+    "/js/js/page-login.js": "/js/js/page-login.js",
+    "/js/js/page-base-not-found.js": "/js/js/page-base-not-found.js",
+    "/css/app.css": "/css/app.css"
+}

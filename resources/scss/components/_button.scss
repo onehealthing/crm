@@ -1,0 +1,8 @@
+.btn {
+  &-delete {
+    &:hover {
+      background-color: $color-danger;
+      border: 1px solid $color-danger;
+    }
+  }
+}
